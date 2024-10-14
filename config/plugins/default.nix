@@ -1,0 +1,19 @@
+{
+  imports = [
+    ./alpha.nix
+    ./comment.nix
+    ./completion.nix
+    ./gitsigns.nix
+    ./languages.nix
+    ./lsp.nix
+    ./neotree.nix
+    ./notify.nix
+    ./oil.nix
+    ./todo-comments.nix
+    ./whichkey.nix
+    ./vim-test.nix
+    ./tmux.nix
+    ./ui.nix
+    ./bufferline.nix
+  ];
+}
