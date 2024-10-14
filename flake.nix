@@ -8,7 +8,7 @@
     nixpkgs,
     nvf,
     ...
-  }: let
+  } @ inputs: let
     systems = [
       "x86_64-linux"
       "aarch64-linux"
@@ -30,6 +30,16 @@
           };
         })
         .neovim;
+    });
+
+    devShells = forAllSystems (system: {
+      default = import ./devshell.nix {
+        inherit inputs;
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+      };
     });
   };
 }
