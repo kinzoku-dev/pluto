@@ -1,6 +1,7 @@
 {
   imports = [
     ./alpha.nix
+    ./bufferline.nix
     ./comment.nix
     ./completion.nix
     ./gitsigns.nix
@@ -14,6 +15,5 @@
     ./vim-test.nix
     ./tmux.nix
     ./ui.nix
-    ./bufferline.nix
   ];
 }

@@ -23,6 +23,24 @@
               text_align = "left";
             }
           ];
+          diagnostics_indicator = {
+            _type = "lua-inline";
+            expr = ''
+              function(count, level, diagnostics_dict, context)
+                local s = " "
+                for e, n in pairs (diagnostics_dict) do
+                  local sym = context.buffer:current() and ""
+                    or (
+                      e == "error" and "  "
+                        or (e == "warning" and "  " or "  ")
+                    )
+                  s = s .. n .. sym
+                end
+                return s
+              end
+            '';
+          };
+          numbers = "none";
         };
       };
     };
