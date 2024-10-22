@@ -2,6 +2,7 @@
   imports = [
     ./aerial.nix
     ./alpha.nix
+    ./arrow.nix
     ./bufferline.nix
     ./comment.nix
     ./completion.nix
