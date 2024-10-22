@@ -9,13 +9,14 @@
     ./gitsigns.nix
     ./languages.nix
     ./lsp.nix
+    ./neocord.nix
     ./neotree.nix
     ./notify.nix
     ./oil.nix
-    ./todo-comments.nix
-    ./whichkey.nix
-    ./vim-test.nix
     ./tmux.nix
+    ./todo-comments.nix
     ./ui.nix
+    ./vim-test.nix
+    ./whichkey.nix
   ];
 }
